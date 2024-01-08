@@ -44,7 +44,7 @@
               <label>Mot de passe</label>
               <input type="password" name="mdp" class="form-control" placeholder="Mot de passe..." required="">
             </div>
-            <button type="submit" class="btn btn-primary">connexion</button>
+            <button type="submit" class="btn btn-primary">CONNEXION</button>
           </form>
         </div>
       </div>

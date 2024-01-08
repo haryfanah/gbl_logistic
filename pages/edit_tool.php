@@ -26,7 +26,7 @@
 	 			<input class="form-control mt-2" type="text" name="ref" value="<?php echo $tool['reference']; ?>">
 
 	 			<label>Date de modification:</label>
-	 			<input type="date" name="update_date" class="form-control">
+	 			<input type="date" name="update_date" required="" class="form-control">
 	 		
 	 	</div>
 	 	<div class="col-12 col-lg-3">
