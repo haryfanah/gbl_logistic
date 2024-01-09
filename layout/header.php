@@ -17,7 +17,14 @@ Licence URI: http://www.os-templates.com/template-terms
 <script type="text/javascript" src="layout/js/jquery-3.3.1.slim.min.js"></script>
 <script type="text/javascript" src="layout/js/bootstrap.bundle.min.js"></script>
 </head>
-<?php include('codes/Database.php') ?>
+<?php 
+include('codes/Database.php'); 
+
+$id_user = $_SESSION['actif'];
+$users = $db->prepare('SELECT * from users where id_user =?');
+$users->execute(array($id_user));
+$user = $users->fetch();
+?>
 <body >
 <style type="text/css">
   .bg-dark-purple{background: #0D0221;} .bg-dark-cyan{background: #368F8B;} .bg-denim{background: #2E5EAA;} .white{color:white;}
@@ -42,7 +49,7 @@ Licence URI: http://www.os-templates.com/template-terms
       <nav class="ml-auto">
         <ul class="navbar-nav">
           <li class="nav-item dropdown">
-            <a href="" class="nav-link dropdown-toggle" data-toggle="dropdown" style="color: #EAE0D5;"><strong><i class="fa fa-user"></i> User</strong></a>
+            <a href="" class="nav-link dropdown-toggle" data-toggle="dropdown" style="color: #EAE0D5;"><strong><i class="fa fa-user"></i> <?php echo $user['pseudo']; ?></strong></a>
             <ul class="dropdown-menu">
               <li class="dropdown-item"><a href="codes/logout.php">Déconnecter</a></li>
             </ul>
