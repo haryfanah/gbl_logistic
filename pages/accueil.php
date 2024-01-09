@@ -106,7 +106,7 @@
                 ?>
               <tr>
                   <td><?php echo $l['nom_cat']; ?></td>
-                  <td><?php $date = $l['date_cat']; $date= date('d/m/y'); echo $date; ?></td>
+                  <td><?php $date = $l['date_cat']; echo $date; ?></td>
               </tr>
                <?php } ?>
             </table>

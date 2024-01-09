@@ -3,7 +3,7 @@
 	if(!empty($_POST['pseudo']) && !empty($_POST['mdp']))
 	{
 		$pseudo = $_POST['pseudo'];
-		$mdp = $_POST['mdp'];
+		$mdp = md5($_POST['mdp']);
 		$users = $db->prepare('SELECT * from users where pseudo = ? and mdp=?');
 		$users->execute(array($pseudo,$mdp));
 		if($users->rowCount() == 1)
