@@ -60,8 +60,12 @@ $user = $users->fetch();
           <li class="nav-item">
             <a href="main.php?page=pages/accueil" class="nav-link" style="color: #EAE0D5;"><strong>Stock</strong></a>
           </li>
-          <li class="nav-item">
-            <a href="" class="nav-link" style="color: #EAE0D5;"><strong>Suivi</strong></a>
+          <li class="nav-item dropleft">
+            <a href="" class="nav-link dropdown-toggle" data-toggle="dropdown" style="color: #EAE0D5;"><strong>Suivi</strong></a>
+            <ul class="dropdown-menu">
+              <li class="dropdown-item"><a href="main.php?page=pages/entree">Entrée</a></li>
+              <li class="dropdown-item"><a href="main.php?page=pages/sortie">Sortie</a></li>
+            </ul>
           </li>
       </ul>
     </nav>
