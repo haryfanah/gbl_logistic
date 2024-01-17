@@ -16,6 +16,7 @@ Licence URI: http://www.os-templates.com/template-terms
 <link rel="stylesheet" type="text/css" href="layout/css/elegant-icons-style.css">
 <script type="text/javascript" src="layout/js/jquery-3.3.1.slim.min.js"></script>
 <script type="text/javascript" src="layout/js/bootstrap.bundle.min.js"></script>
+
 </head>
 <?php 
 include('codes/Database.php'); 
